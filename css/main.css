@@ -1,0 +1,82 @@
+/* Custom styling for the Bootstrap website. 
+These styles do not ship with Bootstrap. 
+Some are overrides of existing Bootstrap styles, while others are new styles not existing in Bootstrap.
+In the starting CSS document, styles are based on custom classes not in Bootstrap.
+*/
+
+/* below styles are the default -- take effect at resolutions <768 px */
+.logo {
+	text-align: center;
+}
+.tagline {
+	color: #602F8D;
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 1em;
+}
+
+
+.siteinfo {
+	
+	padding: 3em 0;
+	border-top: 5px solid #bbb;
+    text-align: center;
+    font-size: 15px;
+}
+/*
+.siteinfo a {
+	text-decoration: none;
+	color: #999;
+	font-size: 0.8em;
+}
+.siteinfo a:hover {
+	color: #602F8D;
+	text-decoration: underline;
+}
+*/
+
+
+
+.img-responsive {
+ display: block;
+ height: auto;
+ max-width: 70%;
+}
+
+#imgresp{
+ display: block;
+ height: auto;
+ max-width: 150%;
+}
+
+
+
+
+.form-group button {
+	margin-top: 10px;
+}
+
+form .col-sm-2,
+form .col-sm-10 {
+	padding: 10px 0;
+	margin: 0;
+}
+
+
+@media (min-width: 768px) {  
+	.logo {
+		text-align: left;
+	}
+	.tagline {
+		font-size: 2em;
+		text-align: right;
+		padding-top: 1.6em;
+	}
+	form {
+		width: 750px;
+		margin: 0 auto;
+	}
+
+}
