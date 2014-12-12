@@ -1,23 +1,24 @@
-/* Custom styling for the Bootstrap website. 
-These styles do not ship with Bootstrap. 
-Some are overrides of existing Bootstrap styles, while others are new styles not existing in Bootstrap.
-In the starting CSS document, styles are based on custom classes not in Bootstrap.
+/* Custom styling 
 */
 
-/* below styles are the default -- take effect at resolutions <768 px */
+
 .logo {
 	text-align: center;
 }
 .tagline {
-	color: #602F8D;
-	font-family: Georgia, serif;
+	color: #711F6D;
+	font-family: 'Oswald', sans-serif;
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	text-align: center;
-	padding-top: 1em;
+	padding-top: 1.1em;
 }
 
-
+p,h1,label,
+h2,h3,th,td
+{
+	font-family:'Oswald', sans-serif;
+}
 .siteinfo {
 	
 	padding: 3em 0;
@@ -25,24 +26,13 @@ In the starting CSS document, styles are based on custom classes not in Bootstra
     text-align: center;
     font-size: 15px;
 }
-/*
-.siteinfo a {
-	text-decoration: none;
-	color: #999;
-	font-size: 0.8em;
-}
-.siteinfo a:hover {
-	color: #602F8D;
-	text-decoration: underline;
-}
-*/
-
 
 
 .img-responsive {
  display: block;
  height: auto;
- max-width: 70%;
+ width: 100%;
+margin-bottom: 3%;
 }
 
 #imgresp{
@@ -52,31 +42,52 @@ In the starting CSS document, styles are based on custom classes not in Bootstra
 }
 
 
-
+.label{
+    
+    color: #FAFAD2;
+}
 
 .form-group button {
-	margin-top: 10px;
+	margin-top: 35px;
+    margin-right: 300px;
 }
 
 form .col-sm-2,
 form .col-sm-10 {
-	padding: 10px 0;
-	margin: 0;
+	padding: 3px 5px;
+	margin: .1px;
+    width: 45%;
+}
+
+@media screen and (min-width: 780px) and (max-width: 960px) {
+
+#imgresp{
+ display: block;
+ height: auto;
+ max-width: 100%;
+}
+}
+@media screen and (min-width: 500px) and (max-width: 779px) {
+
+#imgresp{
+ display: block;
+ height: auto;
+ max-width: 100%;
 }
 
 
-@media (min-width: 768px) {  
-	.logo {
-		text-align: left;
-	}
-	.tagline {
-		font-size: 2em;
-		text-align: right;
-		padding-top: 1.6em;
-	}
-	form {
-		width: 750px;
-		margin: 0 auto;
-	}
-
 }
+
+@media screen and (max-width: 400px) {
+
+#imgresp{
+ display: block;
+ height: auto;
+ max-width: 100%;
+}
+    
+    
+}
+
+
+		
